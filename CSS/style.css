@@ -1,0 +1,561 @@
+/*--------------*/
+/* GOOGLE FONTS */
+/*--------------*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+/*---------------------------*/
+/* SELECTOR UNIVERSAL Y HTML */
+/*---------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+html {
+    overflow-x: hidden;
+}
+article {
+    flex: 2;
+    background-color: #ffffff;
+    padding: 20px;
+    margin-right: 20px;
+}
+aside {
+    height: 100%;
+    flex: 1;
+    background-color: #f8f9fa;
+    padding: 20px;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+}
+h3 {
+    margin: 15px;
+}
+
+/*--------*/
+/* NAVBAR */
+/*--------*/
+.navbar {
+    background-color: rgb(186, 1, 25);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-brand,
+.nav-link {
+    color: #fff;
+}
+
+.navName:hover,
+.logo-container:hover .ri-netease-cloud-music-fill {
+    opacity: 0.9;
+    color: #000;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand i {
+    margin-right: 10px;
+}
+
+.navbar-brand .navName {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+/* OPCIONES MENU (HOME, ...) */
+.nav-link {
+    font-size: 25px;
+    font-weight: bold;
+    padding: 5px;
+    opacity: 1;
+}
+
+.current {
+    /* SABER LA PAGINA ACTUAL */
+    color: #000 !important;
+    transition: color 0.3s;
+}
+
+/* ICONOS RRS (GITHUB, DEV...) */
+.nav-item {
+    padding: 5px;
+    transition: color 0.3s, text-decoration 0.3s;
+    position: relative; /* IMPORTANTE POSICIONAR PSEUDO-ELEMENTO! */
+}
+
+.nav-item.social {
+    font-size: 20px;
+    opacity: 1;
+    color: #ffffff;
+    font-weight: bold;
+    transition: opacity 0.5s ease, text-decoration 0.3s;
+}
+
+.nav-item.social a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.nav-item.social a:hover {
+    color: #000;
+    opacity: 0.6;
+}
+
+/* SUBRAYADO ANIMADO */
+.navbar-nav .nav-item::before {
+    content: "";
+    position: absolute;
+    bottom: 7.3px; /* OJO 7.3PX PEGA EL SUBRAYADO AL TEXTO COMO QUIERO CUIDAD NO CAMBIARLO!!!! */
+    height: 1px; /* GROSOR */
+    width: 100%; /* ANCHO SUBRAYADO */
+    transition: width 0.3s;
+    background-color: #000;
+    left: 0; /* DESDE INICIO DE TEXTO */
+    transform: scaleX(0); /* OCULTAR SUBRAYADO INICIAL */
+    transform-origin: bottom left; /* FIJAR ORIGEN TRANSICION */
+}
+
+.navbar-nav .nav-item:hover::before {
+    transform: scaleX(1); /* MOSTRAR ANIMACION */
+}
+
+/*------*/
+/* MAIN */
+/*------*/
+main {
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+/* CARROUSEL */
+#hero-carousel {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+.slide {
+    flex: 0 0 100%; /* 100% OCUPA DE CADA CONTENEDOR */
+    min-width: 100vw;
+    height: 100vh;
+    text-align: center;
+    font-size: 2em;
+    box-sizing: border-box;
+}
+.carousel-item {
+    position: relative;
+}
+.carousel-inner {
+    height: 100%; /* ALTURA DEL CARROUSEL */
+    width: 100%;
+}
+.c-item {
+    height: 100%;
+    width: 100%;
+}
+.c-img {
+    /*IMAGENES CARROUSELL*/
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(0.4);
+}
+.carousel-caption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.carousel-caption h2 {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.5em;
+}
+
+/*FLECHITAS CARROUSEL*/
+.carousel-control-prev {
+    left: 0;
+}
+.carousel-control-next {
+    right: 0;
+}
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15%;
+    color: #fff;
+    text-align: center;
+    opacity: 0.5;
+}
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    color: #fff;
+    text-decoration: none;
+    opacity: 1;
+}
+
+/*NEWS AND WIDGET*/
+.col-lg-8 {
+    margin-bottom: 15px;
+}
+.col-md-8 {
+    padding-top: 25px;
+    margin-bottom: 15px;
+}
+.news-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-right: 15px;
+}
+.news-item h3,
+.news-item p,
+.news-item a {
+    margin: 0;
+}
+
+/* CONTENEDOR DE POSTS INSTAGRAM */
+.containerInsta {
+    border-radius: 15px;
+    overflow: hidden;
+    max-width: 1250px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.post-container {
+    margin: 20px;
+}
+
+.titleh2 {
+    margin-top: 5px;
+}
+
+
+/* COLUMNA DE VIDEOS DE YOUTUBE */
+.videos {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.m-0 {
+    margin-top: 20px;
+}
+.embed-responsive {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+.embed-responsive iframe {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.video-container {
+    margin: 20px;
+    width: calc(100% - 40px);
+}
+.video-container {
+    width: 100%;
+    height: 100%;
+}
+
+/*------*/
+/* BODY */
+/*------*/
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 3000px;
+    overflow-x: hidden;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 35vh;
+    font-size: 36px;
+    text-transform: uppercase;
+    background-color: #333;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+/*---------*/
+/* COOKIES */
+/*---------*/
+
+/* Estilo del contenedor de cookies */
+#cookie-notice {
+    display: none;
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    padding: 5px 10px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Estilo del mensaje dentro del contenedor */
+#cookie-notice p {
+    margin: 0;
+    color: #fff;
+}
+
+/* Estilo para los botones de aceptar y rechazar */
+#cookie-notice button {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+/* Estilo específico para el botón de rechazar */
+#cookie-notice #reject-cookies {
+    background-color: #f44336;
+}
+
+/*--------*/
+/* FOOTER */
+/*--------*/
+footer {
+    background-color: rgb(186, 1, 25);
+    padding: 10px;
+}
+
+.sticky-footer {
+    position: sticky;
+    top: 100%;
+}
+
+.menu-item-footer {
+    /* CLASE DE HOME, PROJECTS... EN FOOTER */
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 5px;
+    opacity: 1;
+    margin-top: 5px;
+    margin-bottom: auto;
+    text-decoration: none; /* QUITAR ENCLACES DEL FOOTER */
+}
+.footerContainer a {
+    color: #ffffff;
+}
+
+.menu-item-footer:hover {
+    color: #000000;
+}
+
+.border-bottom {
+    padding-bottom: 10px; /* CENTRADO DE HOME... CON LA LINEA BLANCA DEL FOOTER */
+}
+
+.madeContainer {
+    /* CONTENEDOR PARA CENTRAR ENLACE MADE BY */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.madeBy {
+    font-size: 15px;
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
+    opacity: 1;
+    color: #ffffff;
+    padding-top: 25px;
+    font-weight: bold;
+}
+
+.copyright {
+    font-size: 15px;
+    opacity: 1;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/*--------------.*/
+/* MEDIA QUERIES */
+/*---------------*/
+
+/* Estilos para iPhone 8 / Redmi 9 */
+@media only screen and (max-device-width: 393px) and (max-device-height: 851px) {
+    h1 {
+        font-size: 16px;
+    }
+    p {
+        font-size: 14px;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    .post-container {
+        float: left;
+        width: 50%;
+    }
+}
+
+
+/* iPad Mini (Vertical) */
+@media only screen and (min-width: 394px) and (max-width: 768px) and (min-height: 851px) and (max-height: 1024px) {
+    h1 {
+        font-size: 20px;
+    }
+    p {
+        font-size: 16px;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .navName {
+        font-size: 40px;
+    }
+    .nav-link {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .nav-item {
+        padding: 5px; /* PARA QUE NO SE ME SUBAN LOS ICONOS ARRIBA */
+        text-align: center;
+    }
+    .social-icons {
+        display: flex;
+        flex-direction: column;
+    }
+    .navbar-nav .nav-item::before {
+        display: none;
+    }
+    .post-container {
+        float: left;
+        width: 50%;
+    }
+}
+
+/* iPad Pro 12.9” (Vertical) */
+@media only screen and (min-width: 769px) and (max-width: 1024px) and (min-height: 1025px) and (max-height: 1366px) {
+    h1 {
+        font-size: 24px;
+    }
+    p {
+        font-size: 18px;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .navName {
+        font-size: 40px;
+    }
+    .nav-link {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .nav-item {
+        padding: 5px; /* PARA QUE NO SE ME SUBAN LOS ICONOS ARRIBA */
+        text-align: center;
+    }
+    .social-icons {
+        display: flex;
+        flex-direction: column;
+    }
+    .navbar-nav .nav-item::before {
+        display: none;
+    }
+    .post-container {
+        float: left;
+        width: 50%;
+    }
+}
+
+/* Pantalla de portátil más común */
+@media only screen and (min-width: 1025px) and (max-width: 1440px) and (min-height: 900px) and (max-height: 900px) {
+    h1 {
+        font-size: 30px;
+    }
+    p {
+        font-size: 20px;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .navName {
+        font-size: 40px;
+    }
+    .nav-link {
+        font-size: 28px;
+        padding: 10px 20px;
+    }
+    .nav-item {
+        text-align: center;
+    }
+    .post-container {
+        float: left;
+        width: 50%;
+    }
+}
+
+/* Pantalla Full HD */
+@media only screen and (min-width: 1441px) and (max-width: 1920px) and (min-height: 1080px) and (max-height: 1080px) {
+    h1 {
+        font-size: 36px;
+    }
+    p {
+        font-size: 24px;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+        
+    .navName {
+        font-size: 40px;
+    }
+    .nav-link {
+        font-size: 28px;
+        padding: 10px 20px;
+    }
+    .nav-item {
+        text-align: center;
+    }
+    .nav-item.social::before {
+        display: none;
+    }
+    .post-container {
+        float: left;
+        width: 50%;
+    }
+}

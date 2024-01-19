@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es ltr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet" />
+        <link rel="stylesheet" href="../../DESARROLLO-WEB/CSS/gallery.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <title>PROYECTO FINAL DW -- VSR</title>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-md navbar-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand abs" href="../../DESARROLLO-WEB/index.html">
+                        <div class="logo-container">
+                            <i class="navName ri-netease-cloud-music-fill"></i>
+                            <h1 class="navName">HAYASA</h1>
+                        </div>
+                    </a>
+                    
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="navbar-collapse collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav">
+                            <li class="nav-item active">
+                                <a href="../../DESARROLLO-WEB/index.html" class="nav-link custom-underline active" aria-current="page"><i class="fa-solid fa-house"></i> HOME</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a href="../../DESARROLLO-WEB/public/artists.html" class="nav-link custom-underline active" aria-current="page"><i class="ri-team-fill"></i> ARTISTS</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a href="../../DESARROLLO-WEB/public/history.html" class="nav-link current custom-underline active" aria-current="page"><i class="ri-hourglass-2-line"></i> HISTORY</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a href="../../DESARROLLO-WEB/public/gallery.html" class="nav-link custom-underline active" aria-current="page"><i class="fa-solid fa-diagram-project"></i> GALLERY</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a href="../../DESARROLLO-WEB/public/about.html" class="nav-link custom-underline active" aria-current="page"><i class="fa-solid fa-question"></i> ABOUT</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a href="../../DESARROLLO-WEB/public/contact.html" class="nav-link custom-underline active" aria-current="page"><i class="fa-solid fa-phone"></i> CONTACT</a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav ms-auto">
+                            <div class="nav-item social">
+                                <a class="nav-item" href="../../DESARROLLO-WEB/public/contact.html"><i class="fa-solid fa-envelope"></i></a>
+                                <a class="nav-item" href="https://github.com/VSXR"><i class="fa-brands fa-github"></i></a>
+                                <a class="nav-item" href="https://dev.to/vsx"><i class="fa-brands fa-dev"></i></a>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+            
+        <main>
+            <!-- BANNER CON VIDEO DE FONDO -->
+            <div class="hero text-center banner-video">
+                <video autoplay muted loop>
+                    <source src="../../DESARROLLO-WEB/media/HISTORY.mp4" type="video/mp4">
+                    Tu navegador no soporta el elemento de video.
+                </video>
+                <h1>HISTORY</h1>
+                <button id="scrollButton" onclick="scrollToContent()">V</button>
+            </div>
+
+
+            <!-- CONTENEDOR DE PÁRRAFOS Y TÍTULOS -->
+            <div class="container">
+                <h2 class="title mb-4 text-center">El Nacimiento de los DJs y su Música</h2>
+                <hr>
+                <!-- Décadas de 1960-1970: Los Inicios -->
+                <div class="section-60s-70s">
+                    <h2 class="mt-4 text-center">Décadas de 1960-1970: Los Inicios</h2>
+                    <img class="img-fluid mx-auto d-block rounded my-5" src="../../DESARROLLO-WEB/media/LaurieSpiegel.jpg" alt="">
+                    <p class="pClass text-center">
+                        Orígenes en Clubes Nocturnos: La figura del DJ surge en los clubes nocturnos de Nueva York en la década de 1960. En este contexto efervescente, los DJs desempeñaban una función esencial: seleccionar y mezclar discos con el objetivo de mantener a la gente bailando sin interrupciones. Estos pioneros fueron los arquitectos de una nueva forma de experimentación musical en un entorno vibrante y socialmente dinámico.
+                    </p>
+                    <p class="pClass text-center">
+                        Técnicas Iniciales: En los primeros días, los DJs utilizaban giradiscos y mezcladoras simples para crear transiciones suaves entre canciones. La música predominante en esta época abarcaba géneros como el funk, el soul y el disco, estableciendo las bases de lo que vendría a ser la escena musical electrónica.
+                    </p>
+                    <hr>
+                </div>
+            
+                <!-- Década de 1970: Auge de la Cultura Disco -->
+                <div class="section-70s-disco">
+                    <h2 class="img-fluid text-center" class="text-center">Década de 1970: Auge de la Cultura Disco</h2>
+                    <img class="img-fluid mx-auto d-block rounded my-5" src="../../DESARROLLO-WEB/media/dsico.jpg" alt="">
+                    <p class="pClass text-center">
+                        Explosión de la Cultura Disco: La década de 1970 presenció la explosión de la cultura disco, marcada por la prominencia de los DJs. El vinilo de 12 pulgadas se convirtió en el formato preferido en las pistas de baile, permitiendo mezclas más prolongadas y creativas. Los clubes nocturnos se convirtieron en laboratorios sonoros donde los DJs ejercían su creatividad y contribuían al desarrollo de un fenómeno musical sin precedentes.
+                    </p>
+                    <p class="pClass text-center">
+                        DJ's Famosos: Iconos como Larry Levan (Paradise Garage) y Frankie Knuckles (Warehouse) se destacaron en la escena disco de Nueva York y Chicago, respectivamente. Su influencia fue trascendental en la evolución de la música electrónica, dando paso al surgimiento de géneros como el house y el techno que definirían la siguiente etapa.
+                    </p>
+                    <hr>
+                </div>
+
+                <!-- Décadas de 1980-1990: Evolución de la Música Electrónica -->
+                <div class="section-80s-90s">
+                    <h2 class="mt-4 text-center">Décadas de 1980-1990: Evolución de la Música Electrónica</h2>
+                    <img class="img-fluid mx-auto d-block rounded my-5" src="../../DESARROLLO-WEB/media/evolucion.jpg" alt="">
+                    <p class="pClass text-center">
+                        Aparición de la Música Electrónica: Con el avance tecnológico, la introducción de sintetizadores y cajas de ritmos revolucionó la escena musical. Esto propició la creación de música electrónica, donde los DJs comenzaron a experimentar con sonidos electrónicos, expandiendo las posibilidades creativas de la música de baile.
+                    </p>
+                    <p class="pClass text-center">
+                        House y Techno: En la mitad de la década de 1980, surgieron géneros como el house y el techno, liderados por figuras como Juan Atkins, Derrick May y Kevin Saunderson en Detroit, así como Frankie Knuckles en Chicago. Estos artistas influyeron significativamente en el desarrollo y la definición de la música electrónica.
+                    </p>
+                    <hr>
+                </div>
+
+                <!-- Década de 1990: Auge de la Rave y el Trance -->
+                <div class="section-90s-rave-trance">
+                    <h2 class="mt-4 text-center">Década de 1990: Auge de la Rave y el Trance</h2>
+                    <img class="img-fluid mx-auto d-block rounded my-5" src="../../DESARROLLO-WEB/media/rave.jpg" alt="">
+                    <p class="pClass text-center">
+                        Rave Culture: La cultura rave se apoderó de Europa y América del Norte en la década de 1990, caracterizada por eventos masivos y DJ sets que podían durar toda la noche. La experiencia rave se fusionó con la música electrónica, dando lugar a una comunidad vibrante y efervescente.
+                    </p>
+                    <p class="pClass text-center">
+                        Explosión del Trance: DJs destacados como Armin van Buuren y Paul Oakenfold desempeñaron un papel fundamental en la popularización del trance. Este género se distingue por sus ritmos hipnóticos y melódicos, atrayendo a una audiencia global y consolidando la presencia de la música electrónica en la cultura mainstream.
+                    </p>
+                    <hr>
+                </div>
+
+                <!-- Décadas de 2000-2010: Consolidación de la Música Electrónica -->
+                <div class="section-2000s-2010s">
+                    <h2 class="mt-4 text-center">Décadas de 2000-2010: Consolidación de la Música Electrónica</h2>
+                    <img class="img-fluid mx-auto d-block rounded my-5" src="../../DESARROLLO-WEB/media/avicii.jpg" alt="">
+                    <p class="pClass text-center">
+                        Boom de la Música Electrónica de Baile (EDM): La música electrónica alcanzó un nivel de popularidad sin precedentes en las primeras décadas del siglo XXI. Festivales masivos como Tomorrowland se convirtieron en epicentros de la cultura EDM, y DJs como Tiësto y David Guetta lideraron eventos internacionales, llevando la música electrónica a nuevas alturas.
+                    </p>
+                    <p class="pClass text-center">
+                        Influencia en la Música Pop: La fusión de elementos electrónicos con la música pop se hizo evidente, con muchos éxitos pop incorporando sonidos y ritmos característicos de la electrónica. La colaboración entre DJs y artistas mainstream se volvió común, contribuyendo a la diversificación y expansión de la música electrónica en diferentes géneros musicales.
+                    </p>
+                    <hr>
+                </div>
+
+                <!-- Década de 2010 en Adelante: Diversificación y Continua Evolución -->
+                <div class="section-2010s-onward">
+                    <h2 class="mt-4 text-center">Década de 2010 en Adelante: Diversificación y Continua Evolución</h2>
+                    <img class="img-fluid mx-auto d-block rounded my-5" src="../../DESARROLLO-WEB/media/hoy.jpg" alt="">
+                    <p class="pClass text-center">
+                        Diversificación de Géneros: La escena musical electrónica se diversificó aún más en las últimas décadas con la aparición de subgéneros como dubstep, trap y future bass. Productores y DJs visionarios como Skrillex y Diplo rompieron barreras entre géneros, explorando nuevas posibilidades sonoras y atrayendo a audiencias diversas.
+                    </p>
+                    <p class="pClass text-center">
+                        Ascenso de Nuevos Talentos: La accesibilidad de la producción musical digital permitió que surgieran numerosos talentos emergentes. Esto contribuyó a una escena musical más descentralizada y diversa, con artistas de todo el mundo aportando innovación y creatividad a la música electrónica en constante evolución.
+                    </p>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footerContainer sticky-footer">
+            <ul class="nav justify-content-center border-bottom">
+                <li class="nav-item active">
+                    <a href="../../DESARROLLO-WEB/index.html" class="nav-link custom-underline active" aria-current="page">
+                        <i class="fa-solid fa-house"></i> HOME
+                    </a>
+                </li>
+                <li class="nav-item active">
+                    <a href="../../DESARROLLO-WEB/public/artists.html" class="nav-link custom-underline active" aria-current="page">
+                        <i class="ri-team-fill"></i> ARTISTS
+                    </a>
+                </li>
+                <li class="nav-item active">
+                    <a href="../../DESARROLLO-WEB/public/history.html" class="nav-link current custom-underline active" aria-current="page">
+                        <i class="ri-hourglass-2-line"></i> HISTORY
+                    </a>
+                </li>
+                <li class="nav-item active">
+                    <a href="../../DESARROLLO-WEB/public/gallery.html" class="nav-link custom-underline active" aria-current="page">
+                        <i class="fa-solid fa-diagram-project"></i> GALLERY
+                    </a>
+                </li>
+                <li class="nav-item active">
+                    <a href="../../DESARROLLO-WEB/public/about.html" class="nav-link custom-underline active" aria-current="page">
+                        <i class="fa-solid fa-question"></i> ABOUT
+                    </a>
+                </li>
+                <li class="nav-item active">
+                    <a href="../../DESARROLLO-WEB/public/contact.html" class="nav-link custom-underline active" aria-current="page">
+                        <i class="fa-solid fa-phone"></i> CONTACT
+                    </a>
+                </li>
+            </ul>
+            <div class="madeContainer">
+                <a href="https://github.com/VSXR" class="madeBy text-center">- MADE BY VSXR -</a>
+            </div>
+            <p class="copyright text-center" id="yearParagraph"></p>
+        </footer>
+        
+        <script src="../../DESARROLLO-WEB/JS/history.js"></script>
+        <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="vsxr" data-description="Support me on Buy me a coffee!" data-message="" data-color="#BA0119" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        <script src="https://kit.fontawesome.com/ba4ab86251.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    </body>
+</html>

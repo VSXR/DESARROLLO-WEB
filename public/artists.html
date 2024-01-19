@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="es ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../../DESARROLLO-WEB/CSS/artists.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>PROYECTO FINAL DW -- VSR</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand abs" href="../../DESARROLLO-WEB/index.html">
+                    <div class="logo-container">
+                        <i class="navName ri-netease-cloud-music-fill"></i>
+                        <h1 class="navName">HAYASA</h1>
+                    </div>
+                </a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a href="../../DESARROLLO-WEB/index.html" class="nav-link custom-underline active" aria-current="page"><i class="fa-solid fa-house"></i> HOME</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a href="../../DESARROLLO-WEB/public/ARTISTS.html" class="nav-link current custom-underline active" aria-current="page"><i class="ri-team-fill"></i> ARTISTS</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a href="../../DESARROLLO-WEB/public/history.html" class="nav-link custom-underline active" aria-current="page"><i class="ri-hourglass-2-line"></i> HISTORY</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a href="../../DESARROLLO-WEB/public/gallery.html" class="nav-link custom-underline active" aria-current="page"><i class="fa-solid fa-diagram-project"></i> GALLERY</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a href="../../DESARROLLO-WEB/public/about.html" class="nav-link custom-underline active" aria-current="page"><i class="fa-solid fa-question"></i> ABOUT</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a href="../../DESARROLLO-WEB/public/contact.html" class="nav-link custom-underline active" aria-current="page"><i class="fa-solid fa-phone"></i> CONTACT</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ms-auto">
+                        <div class="nav-item social">
+                            <a class="nav-item" href="../../DESARROLLO-WEB/public/contact.html"><i class="fa-solid fa-envelope"></i></a>
+                            <a class="nav-item" href="https://github.com/VSXR"><i class="fa-brands fa-github"></i></a>
+                            <a class="nav-item" href="https://dev.to/vsx"><i class="fa-brands fa-dev"></i></a>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="hero text-center banner-video">
+            <video autoplay muted loop>
+                <source src="../../DESARROLLO-WEB/media/ARTISTS (2).mp4" type="video/mp4">
+                Tu navegador no soporta el elemento de video.
+            </video>
+            <h1>ARTISTS</h1>
+            <button id="scrollButton" onclick="scrollToContent()">V</button>
+        </div>
+        <div class="container">
+            <div class="row">
+                <!-- ARTISTA 1: ALAN WALKER -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <a href="#" onclick="openModal(
+                            'Alan Walker',
+                            '<h5 class=\'modal-title\' id=\'imageModalLabel\'></h5><button type=\'button\' class=\'btn-close\' data-bs-dismiss=\'modal\' aria-label=\'Close\'></button>', 
+                            'Alan Walker, nacido el 24 de agosto de 1997 en Reino Unido, es un talentoso productor y DJ noruego-británico que ha dejado una huella indeleble en la escena de la música electrónica. Su ascenso a la fama comenzó con su megaéxito Faded en 2015, que se convirtió en un fenómeno global. Walker es conocido no solo por su habilidad musical, sino también por su distintiva imagen: siempre lleva una máscara y una sudadera con capucha. A pesar de su juventud, ha demostrado ser un innovador en el género, experimentando con sonidos únicos y colaborando con otros artistas destacados. Su música, en constante evolución, sigue siendo un elemento clave en la playlist de los amantes de la música electrónica en todo el mundo.',
+                            '../../DESARROLLO-WEB/media/alan_walker.jpg', 
+                            'Alan Olav Walker es un DJ y productor noruego-británico. Se hizo conocido por su sencillo \'Faded\' y ha continuado produciendo música electrónica exitosa.'
+                        )">
+                            <img src="../../DESARROLLO-WEB/media/alan_walker.jpg" class="card-img-top w-100" alt="Alan Walker">
+                        </a>
+                        <div class="card-body d-flex flex-column align-items-center">
+                            <h5 class="card-title text-center">ALAN WALKER</h5>
+                            <p class="card-text text-center">Alan Olav Walker es un DJ y productor noruego-británico. Se hizo conocido por su sencillo "Faded" y ha continuado produciendo música electrónica exitosa.</p>
+                            <button class="btn btn-primary" onclick="openModal( 
+                                'Alan Walker',
+                                '<h5 class=\'modal-title\' id=\'imageModalLabel\'></h5><button type=\'button\' class=\'btn-close\' data-bs-dismiss=\'modal\' aria-label=\'Close\'></button>', 
+                                'Alan Walker, nacido el 24 de agosto de 1997 en Reino Unido, es un talentoso productor y DJ noruego-británico que ha dejado una huella indeleble en la escena de la música electrónica. Su ascenso a la fama comenzó con su megaéxito Faded en 2015, que se convirtió en un fenómeno global. Walker es conocido no solo por su habilidad musical, sino también por su distintiva imagen: siempre lleva una máscara y una sudadera con capucha. A pesar de su juventud, ha demostrado ser un innovador en el género, experimentando con sonidos únicos y colaborando con otros artistas destacados. Su música, en constante evolución, sigue siendo un elemento clave en la playlist de los amantes de la música electrónica en todo el mundo.',
+                                '../../DESARROLLO-WEB/media/alan_walker.jpg', 
+                                'Alan Olav Walker es un DJ y productor noruego-británico. Se hizo conocido por su sencillo \'Faded\' y ha continuado produciendo música electrónica exitosa.'
+                            )">Ver más</button>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- ARTISTA 2: MARSHMELLO -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <a href="#" onclick="openModal(
+                            'Marshmello',
+                            '<h5 class=\'modal-title\' id=\'imageModalLabel\'></h5><button type=\'button\' class=\'btn-close\' data-bs-dismiss=\'modal\' aria-label=\'Close\'></button>', 
+                            'Marshmello, cuyo nombre real es Christopher Comstock, ha transformado la escena musical con su enigmática identidad y su versatilidad artística. Nacido el 19 de mayo de 1992, este DJ y productor estadounidense se ha destacado con éxitos como Happier y Alone. Su distintiva máscara de malvavisco ha generado intriga y ha contribuido a su popularidad. Marshmello ha sabido cruzar fronteras musicales, fusionando el EDM con elementos de pop y hip-hop. Además, ha colaborado con una variedad de artistas, consolidándose como una figura influyente en la música electrónica contemporánea y más allá.', 
+                            '../../DESARROLLO-WEB/media/marshmello.jpg', 
+                            'Christopher Comstock, conocido artísticamente como Marshmello, es un DJ y productor discográfico estadounidense de future bass, electrónica y electrohouse. Comenzó a ganar notoriedad internacional gracias a sus remixes de canciones de Jack Ü y Zedd, entre otros.'
+                        )">
+                            <img src="../../DESARROLLO-WEB/media/marshmello.jpg" class="card-img-top w-100" alt="Marshmello">
+                        </a>
+                        <div class="card-body d-flex flex-column align-items-center">
+                            <h5 class="card-title text-center">MARSHMELLO</h5>
+                            <p class="card-text text-center">Christopher Comstock, conocido artísticamente como Marshmello, es un DJ y productor discográfico estadounidense de future bass, electrónica y electrohouse. Comenzó a ganar notoriedad internacional gracias a sus remixes de canciones de Jack Ü y Zedd, entre otros.</p>
+                            <button class="btn btn-primary" onclick="openModal(
+                                'Marshmello',
+                                '<h5 class=\'modal-title\' id=\'imageModalLabel\'></h5><button type=\'button\' class=\'btn-close\' data-bs-dismiss=\'modal\' aria-label=\'Close\'></button>', 
+                                'Marshmello, cuyo nombre real es Christopher Comstock, ha transformado la escena musical con su enigmática identidad y su versatilidad artística. Nacido el 19 de mayo de 1992, este DJ y productor estadounidense se ha destacado con éxitos como Happier y Alone. Su distintiva máscara de malvavisco ha generado intriga y ha contribuido a su popularidad. Marshmello ha sabido cruzar fronteras musicales, fusionando el EDM con elementos de pop y hip-hop. Además, ha colaborado con una variedad de artistas, consolidándose como una figura influyente en la música electrónica contemporánea y más allá.', 
+                                '../../DESARROLLO-WEB/media/marshmello.jpg', 
+                                'Christopher Comstock, conocido artísticamente como Marshmello, es un DJ y productor discográfico estadounidense de future bass, electrónica y electrohouse. Comenzó a ganar notoriedad internacional gracias a sus remixes de canciones de Jack Ü y Zedd, entre otros.'
+                            )">Ver más</button>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- ARTISTA 3: AVICII -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <a href="#" onclick="openModal(
+                            'Avicii', 
+                            '<h5 class=\'modal-title\' id=\'imageModalLabel\'></h5><button type=\'button\' class=\'btn-close\' data-bs-dismiss=\'modal\' aria-label=\'Close\'></button>', 
+                            'Tim Bergling, conocido mundialmente como Avicii, fue un prodigioso DJ y productor sueco nacido el 8 de septiembre de 1989. Su influencia en la música electrónica es innegable, siendo un pionero del género. Avicii alcanzó la cima de la fama con éxitos como Wake Me Up y Levels. Su música trascendió las fronteras del EDM, incorporando elementos de folk y country. La trágica muerte de Avicii en 2018 dejó un vacío en la industria musical, pero su legado perdura como un faro de creatividad y originalidad en la escena electrónica.', 
+                            '../../DESARROLLO-WEB/media/avicii.jpg', 
+                            'Tim Bergling, conocido como Avicii, fue un DJ y productor sueco. Ganó fama internacional con su sencillo Levels y continuó siendo una figura prominente en la música electrónica.'
+                        )">
+                            <img src="../../DESARROLLO-WEB/media/avicii.jpg" class="card-img-top  w-100" alt="Avicii">
+                        </a>
+                        <div class="card-body d-flex flex-column align-items-center">
+                            <h5 class="card-title text-center">AVICII</h5>
+                            <p class="card-text text-center">Tim Bergling, conocido como Avicii, fue un DJ y productor sueco. Ganó fama internacional con su sencillo "Levels" y continuó siendo una figura prominente en la música electrónica.</p>
+                            <button class="btn btn-primary" onclick="openModal(
+                                'Avicii',
+                                '<h5 class=\'modal-title\' id=\'imageModalLabel\'></h5><button type=\'button\' class=\'btn-close\' data-bs-dismiss=\'modal\' aria-label=\'Close\'></button>', 
+                                'Tim Bergling, conocido mundialmente como Avicii, fue un prodigioso DJ y productor sueco nacido el 8 de septiembre de 1989. Su influencia en la música electrónica es innegable, siendo un pionero del género. Avicii alcanzó la cima de la fama con éxitos como Wake Me Up y Levels. Su música trascendió las fronteras del EDM, incorporando elementos de folk y country. La trágica muerte de Avicii en 2018 dejó un vacío en la industria musical, pero su legado perdura como un faro de creatividad y originalidad en la escena electrónica.', 
+                                '../../DESARROLLO-WEB/media/avicii.jpg', 
+                                'Tim Bergling, conocido como Avicii, fue un DJ y productor sueco. Ganó fama internacional con su sencillo Levels y continuó siendo una figura prominente en la música electrónica.'
+                            )">Ver más</button>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- ARTISTA 4: DAVID GUETTA -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <a href="#" onclick="openModal(
+                            'David Guetta', 
+                            '<h5 class=\'modal-title\' id=\'imageModalLabel\'></h5><button type=\'button\' class=\'btn-close\' data-bs-dismiss=\'modal\' aria-label=\'Close\'></button>', 
+                            'David Guetta, nacido el 7 de noviembre de 1967 en Francia, es una leyenda viva en la música electrónica y un visionario en la industria musical global. Reconocido por éxitos como Titanium y Without You, Guetta ha desempeñado un papel crucial en la popularización del EDM. Su habilidad para colaborar con artistas pop y su capacidad para fusionar géneros lo han convertido en un ícono musical. A lo largo de su carrera, ha ganado múltiples premios Grammy y sigue siendo una fuerza motriz en la evolución constante de la música electrónica.', 
+                            '../../DESARROLLO-WEB/media/david_guetta.jpg', 
+                            'David Guetta es un DJ y productor francés. Ha sido una figura clave en la música dance y electrónica, colaborando con varios artistas y lanzando éxitos mundiales.'
+                        )">
+                            <img src="../../DESARROLLO-WEB/media/david_guetta.jpg" class="card-img-top  w-100" alt="David Guetta">
+                        </a>
+                        <div class="card-body d-flex flex-column align-items-center">
+                            <h5 class="card-title text-center">DAVID GUETTA</h5>
+                            <p class="card-text text-center">David Guetta es un DJ y productor francés. Ha sido una figura clave en la música dance y electrónica, colaborando con varios artistas y lanzando éxitos mundiales.</p>
+                            <button class="btn btn-primary" onclick="openModal(
+                                'David Guetta',
+                                '<h5 class=\'modal-title\' id=\'imageModalLabel\'></h5><button type=\'button\' class=\'btn-close\' data-bs-dismiss=\'modal\' aria-label=\'Close\'></button>', 
+                                'David Guetta, nacido el 7 de noviembre de 1967 en Francia, es una leyenda viva en la música electrónica y un visionario en la industria musical global. Reconocido por éxitos como Titanium y Without You, Guetta ha desempeñado un papel crucial en la popularización del EDM. Su habilidad para colaborar con artistas pop y su capacidad para fusionar géneros lo han convertido en un ícono musical. A lo largo de su carrera, ha ganado múltiples premios Grammy y sigue siendo una fuerza motriz en la evolución constante de la música electrónica.', 
+                                '../../DESARROLLO-WEB/media/david_guetta.jpg', 
+                                'David Guetta es un DJ y productor francés. Ha sido una figura clave en la música dance y electrónica, colaborando con varios artistas y lanzando éxitos mundiales.'
+                            )">Ver más</button>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- ARTISTA 5: MARTIN GARRIX -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <a href="#" onclick="openModal(
+                            'Martin Garrix', 
+                            '<h5 class=\'modal-title\' id=\'imageModalLabel\'></h5><button type=\'button\' class=\'btn-close\' data-bs-dismiss=\'modal\' aria-label=\'Close\'></button>', 
+                            'Martijn Garritsen, conocido artísticamente como Martin Garrix, es un DJ y productor neerlandés nacido el 14 de mayo de 1996. Garrix saltó a la fama con su track Animals a una edad temprana, convirtiéndose en uno de los nombres más reconocidos en la música electrónica. Su destreza para mezclar géneros y su enfoque innovador lo han mantenido en la cima de la industria. Garrix no solo ha logrado éxitos individuales sino que también ha sido reconocido como el DJ número uno del mundo en múltiples ocasiones, consolidando su estatus como un líder indiscutible en la escena electrónica internacional.', 
+                            '../../DESARROLLO-WEB/media/martin_garrix.jpg', 
+                            'Martijn Garritsen, conocido como Martin Garrix, es un DJ y productor neerlandés. Es conocido por sus éxitos como Animals y ha sido clasificado como el DJ número 1 del mundo por la revista DJ Mag.'
+                        )">
+                            <img src="../../DESARROLLO-WEB/media/martin_garrix.jpg" class="card-img-top  w-100" alt="Martin Garrix">
+                        </a>
+                        <div class="card-body d-flex flex-column align-items-center">
+                            <h5 class="card-title text-center">MARTIN GARRIX</h5>
+                            <p class="card-text text-center">Martijn Garritsen, conocido como Martin Garrix, es un DJ y productor neerlandés. Es conocido por sus éxitos como "Animals" y ha sido clasificado como el DJ número 1 del mundo por la revista DJ Mag.</p>
+                            <button class="btn btn-primary" onclick="openModal(
+                                'Martin Garrix',
+                                '<h5 class=\'modal-title\' id=\'imageModalLabel\'></h5><button type=\'button\' class=\'btn-close\' data-bs-dismiss=\'modal\' aria-label=\'Close\'></button>', 
+                                'Martijn Garritsen, conocido artísticamente como Martin Garrix, es un DJ y productor neerlandés nacido el 14 de mayo de 1996. Garrix saltó a la fama con su track Animals a una edad temprana, convirtiéndose en uno de los nombres más reconocidos en la música electrónica. Su destreza para mezclar géneros y su enfoque innovador lo han mantenido en la cima de la industria. Garrix no solo ha logrado éxitos individuales sino que también ha sido reconocido como el DJ número uno del mundo en múltiples ocasiones, consolidando su estatus como un líder indiscutible en la escena electrónica internacional.', 
+                                '../../DESARROLLO-WEB/media/martin_garrix.jpg', 
+                                'Martijn Garritsen, conocido como Martin Garrix, es un DJ y productor neerlandés. Es conocido por sus éxitos como Animals y ha sido clasificado como el DJ número 1 del mundo por la revista DJ Mag.'
+                            )">Ver más</button>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- ARTISTA 6: ARMIN VAN BUUREN -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <a href="#" onclick="openModal(
+                            'Armin van Buuren', 
+                            '<h5 class=\'modal-title\' id=\'imageModalLabel\'></h5><button type=\'button\' class=\'btn-close\' data-bs-dismiss=\'modal\' aria-label=\'Close\'></button>', 
+                            'Armin van Buuren, nacido el 25 de diciembre de 1976 en los Países Bajos, es una figura icónica en el mundo del trance y la música electrónica en general. DJ, productor y presentador de radio, Van Buuren ha sido fundamental en la popularización del trance. Su programa de radio A State of Trance es adorado por fans de todo el mundo. A lo largo de su carrera, ha lanzado álbumes aclamados y ha sido clasificado como el mejor DJ del mundo en múltiples ocasiones, dejando una marca indeleble en la escena electrónica.', 
+                            '../../DESARROLLO-WEB/media/armin_van_buuren.jpg', 
+                            'Armin van Buuren es un DJ y productor neerlandés, considerado una de las figuras más influyentes en la música trance. Ha sido clasificado como el DJ número 1 del mundo en varias ocasiones.'
+                        )">
+                            <img src="../../DESARROLLO-WEB/media/armin_van_buuren.jpg" class="card-img-top  w-100" alt="Armin van Buuren">
+                        </a>
+                        <div class="card-body d-flex flex-column align-items-center">
+                            <h5 class="card-title text-center">ARMIN VAN BUUREN</h5>
+                            <p class="card-text text-center">Armin van Buuren es un DJ y productor neerlandés, considerado una de las figuras más influyentes en la música trance. Ha sido clasificado como el DJ número 1 del mundo en varias ocasiones.</p>
+                            <button class="btn btn-primary" onclick="openModal(
+                                'Armin van Buuren',
+                                '<h5 class=\'modal-title\' id=\'imageModalLabel\'></h5><button type=\'button\' class=\'btn-close\' data-bs-dismiss=\'modal\' aria-label=\'Close\'></button>', 
+                                'Armin van Buuren, nacido el 25 de diciembre de 1976 en los Países Bajos, es una figura icónica en el mundo del trance y la música electrónica en general. DJ, productor y presentador de radio, Van Buuren ha sido fundamental en la popularización del trance. Su programa de radio A State of Trance es adorado por fans de todo el mundo. A lo largo de su carrera, ha lanzado álbumes aclamados y ha sido clasificado como el mejor DJ del mundo en múltiples ocasiones, dejando una marca indeleble en la escena electrónica.', 
+                                '../../DESARROLLO-WEB/media/armin_van_buuren.jpg', 
+                                'Armin van Buuren es un DJ y productor neerlandés, considerado una de las figuras más influyentes en la música trance. Ha sido clasificado como el DJ número 1 del mundo en varias ocasiones.'
+                            )">Ver más</button>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- ARTISTA 7: ALOK -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <a href="#" onclick="openModal(
+                            'Alok', 
+                            '<h5 class=\'modal-title\' id=\'imageModalLabel\'></h5><button type=\'button\' class=\'btn-close\' data-bs-dismiss=\'modal\' aria-label=\'Close\'></button>', 
+                            'Alok Achkar Peres Petrillo, conocido simplemente como Alok, es un DJ y productor brasileño nacido el 26 de agosto de 1991. Considerado una fuerza impulsora en la música house y EDM, Alok ha llevado la bandera de la música electrónica brasileña a nivel internacional. Su habilidad para fusionar ritmos envolventes con melodías pegajosas lo ha convertido en un referente en la escena global. Con éxitos como Hear Me Now y Favela, Alok continúa dejando su huella en el panorama musical.', 
+                            '../../DESARROLLO-WEB/media/alok.jpg', 
+                            'Alok Petrillo, conocido como Alok, es un DJ y productor brasileño de música electrónica. Es uno de los artistas más exitosos de Brasil en este género.'
+                        )">
+                            <img src="../../DESARROLLO-WEB/media/alok.jpg" class="card-img-top  w-100" alt="Alok">
+                        </a>
+                        <div class="card-body d-flex flex-column align-items-center">
+                            <h5 class="card-title text-center">ALOK</h5>
+                            <p class="card-text text-center">Alok Petrillo, conocido como Alok, es un DJ y productor brasileño de música electrónica. Es uno de los artistas más exitosos de Brasil en este género.</p>
+                            <button class="btn btn-primary" onclick="openModal(
+                                'Alok',
+                                '<h5 class=\'modal-title\' id=\'imageModalLabel\'></h5><button type=\'button\' class=\'btn-close\' data-bs-dismiss=\'modal\' aria-label=\'Close\'></button>', 
+                                'Alok Achkar Peres Petrillo, conocido simplemente como Alok, es un DJ y productor brasileño nacido el 26 de agosto de 1991. Considerado una fuerza impulsora en la música house y EDM, Alok ha llevado la bandera de la música electrónica brasileña a nivel internacional. Su habilidad para fusionar ritmos envolventes con melodías pegajosas lo ha convertido en un referente en la escena global. Con éxitos como Hear Me Now y Favela, Alok continúa dejando su huella en el panorama musical.', 
+                                '../../DESARROLLO-WEB/media/alok.jpg', 
+                                'Alok Petrillo, conocido como Alok, es un DJ y productor brasileño de música electrónica. Es uno de los artistas más exitosos de Brasil en este género.'
+                            )">Ver más</button>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- ARTISTA 8: DIMITRI VEGAS & LIKE MIKE -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <a href="#" onclick="openModal(
+                            'Dimitri Vegas & Like Mike', 
+                            '<h5 class=\'modal-title\' id=\'imageModalLabel\'></h5><button type=\'button\' class=\'btn-close\' data-bs-dismiss=\'modal\' aria-label=\'Close\'></button>', 
+                            'Dimitri Vegas (Dimitri Thivaios) y Like Mike (Michael Thivaios), los hermanos belgas que conforman este dinámico dúo, han dejado una impresión duradera en la escena de la música electrónica. Su energía en el escenario y su habilidad para conectar con las audiencias masivas los han catapultado a la fama mundial. A través de colaboraciones con artistas prominentes y actuaciones en eventos de gran envergadura, Dimitri Vegas & Like Mike continúan siendo una fuerza dominante en la música electrónica contemporánea.', 
+                            '../../DESARROLLO-WEB/media/dimitri_vegas_like_mike.jpg', 
+                            'Dimitri Vegas & Like Mike son un dúo de hermanos belgas conocidos por sus actuaciones energéticas y producciones de música electrónica. Han sido clasificados como los DJ número 1 del mundo por DJ Mag.'
+                        )">
+                            <img src="../../DESARROLLO-WEB/media/dimitri_vegas_like_mike.jpg" class="card-img-top  w-100" alt="Dimitri Vegas & Like Mike">
+                        </a>
+                        <div class="card-body d-flex flex-column align-items-center">
+                            <h5 class="card-title text-center">DIMITRI VEGAS & LIKE MIKE</h5>
+                            <p class="card-text text-center">Dimitri Vegas & Like Mike son un dúo de hermanos belgas conocidos por sus actuaciones energéticas y producciones de música electrónica. Han sido clasificados como los DJ número 1 del mundo por DJ Mag.</p>
+                            <button class="btn btn-primary" onclick="openModal(
+                                'Dimitri Vegas & Like Mike',
+                                '<h5 class=\'modal-title\' id=\'imageModalLabel\'></h5><button type=\'button\' class=\'btn-close\' data-bs-dismiss=\'modal\' aria-label=\'Close\'></button>', 
+                                'Dimitri Vegas (Dimitri Thivaios) y Like Mike (Michael Thivaios), los hermanos belgas que conforman este dinámico dúo, han dejado una impresión duradera en la escena de la música electrónica. Su energía en el escenario y su habilidad para conectar con las audiencias masivas los han catapultado a la fama mundial. A través de colaboraciones con artistas prominentes y actuaciones en eventos de gran envergadura, Dimitri Vegas & Like Mike continúan siendo una fuerza dominante en la música electrónica contemporánea.', 
+                                '../../DESARROLLO-WEB/media/dimitri_vegas_like_mike.jpg', 
+                                'Dimitri Vegas & Like Mike son un dúo de hermanos belgas conocidos por sus actuaciones energéticas y producciones de música electrónica. Han sido clasificados como los DJ número 1 del mundo por DJ Mag.'
+                            )">Ver más</button>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- ARTISTA 9: AFROJACK -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <a href="#" onclick="openModal(
+                            'Afrojack', 
+                            '<h5 class=\'modal-title\' id=\'imageModalLabel\'></h5><button type=\'button\' class=\'btn-close\' data-bs-dismiss=\'modal\' aria-label=\'Close\'></button>', 
+                            'Nick van de Wall, más conocido como Afrojack, es un DJ y productor neerlandés nacido el 9 de septiembre de 1987. Su impacto en la escena del EDM es innegable, destacándose por su estilo único y su habilidad para crear pistas emocionantes y llenas de energía. Afrojack ha colaborado con artistas de renombre y ha sido una fuerza constante en la evolución del género. Con una carrera llena de éxitos como Take Over Control y Ten Feet Tall, Afrojack sigue siendo una figura clave en la música electrónica mundial.', 
+                            '../../DESARROLLO-WEB/media/afrojack.jpg', 
+                            'Nick van de Wall, conocido como Afrojack, es un DJ y productor neerlandés de música electrónica. Ha sido reconocido por sus contribuciones al género y sus colaboraciones con artistas de renombre.'
+                        )">
+                            <img src="../../DESARROLLO-WEB/media/afrojack.jpg" class="card-img-top w-100" alt="Afrojack">
+                        </a>
+                        <div class="card-body d-flex flex-column align-items-center">
+                            <h5 class="card-title text-center">AFROJACK</h5>
+                            <p class="card-text text-center">Nick van de Wall, conocido como Afrojack, es un DJ y productor neerlandés de música electrónica. Ha sido reconocido por sus contribuciones al género y sus colaboraciones con artistas de renombre.</p>
+                            <button class="btn btn-primary" onclick="openModal(
+                                'Afrojack',
+                                '<h5 class=\'modal-title\' id=\'imageModalLabel\'></h5><button type=\'button\' class=\'btn-close\' data-bs-dismiss=\'modal\' aria-label=\'Close\'></button>', 
+                                'Nick van de Wall, más conocido como Afrojack, es un DJ y productor neerlandés nacido el 9 de septiembre de 1987. Su impacto en la escena del EDM es innegable, destacándose por su estilo único y su habilidad para crear pistas emocionantes y llenas de energía. Afrojack ha colaborado con artistas de renombre y ha sido una fuerza constante en la evolución del género. Con una carrera llena de éxitos como Take Over Control y Ten Feet Tall, Afrojack sigue siendo una figura clave en la música electrónica mundial.', 
+                                '../../DESARROLLO-WEB/media/afrojack.jpg', 
+                                'Nick van de Wall, conocido como Afrojack, es un DJ y productor neerlandés de música electrónica. Ha sido reconocido por sus contribuciones al género y sus colaboraciones con artistas de renombre.'
+                            )">Ver más</button>
+                        </div>
+                    </div>
+                </div>
+    
+    
+                <!-- ARTISTA 10: DON DIABLO -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <a href="#" onclick="openModal(
+                            'Don Diablo',
+                            '<h5 class=\'modal-title\' id=\'imageModalLabel\'></h5><button type=\'button\' class=\'btn-close\' data-bs-dismiss=\'modal\' aria-label=\'Close\'></button>', 
+                            'Don Diablo, cuyo nombre real es Don Pepijn Schipper, es un DJ y productor neerlandés nacido el 27 de febrero de 1980. Su contribución al mundo de la música electrónica, especialmente en el subgénero del future house, ha sido significativa. Diablo es reconocido por su estilo distintivo y su capacidad para fusionar elementos de diversos géneros en sus producciones. A lo largo de su carrera, ha lanzado álbumes exitosos y ha dejado una marca indeleble en la escena de la música electrónica moderna como un innovador y líder.', 
+                            '../../DESARROLLO-WEB/media/don_diablo.jpg', 
+                            'Don Pepijn Schipper, conocido como Don Diablo, es un DJ, productor y músico neerlandés. Ha sido reconocido por su estilo innovador y ha colaborado con varios artistas destacados.'
+                        )">
+                            <img src="../../DESARROLLO-WEB/media/don_diablo.jpg" class="card-img-top w-100" alt="Don Diablo">
+                        </a>
+                        <div class="card-body d-flex flex-column align-items-center">
+                            <h5 class="card-title text-center">DON DIABLO</h5>
+                            <p class="card-text text-center">Don Pepijn Schipper, conocido como Don Diablo, es un DJ, productor y músico neerlandés. Ha sido reconocido por su estilo innovador y ha colaborado con varios artistas destacados.</p>
+                            <button class="btn btn-primary" onclick="openModal( 
+                                'Don Diablo',
+                                '<h5 class=\'modal-title\' id=\'imageModalLabel\'></h5><button type=\'button\' class=\'btn-close\' data-bs-dismiss=\'modal\' aria-label=\'Close\'></button>', 
+                                'Don Diablo, cuyo nombre real es Don Pepijn Schipper, es un DJ y productor neerlandés nacido el 27 de febrero de 1980. Su contribución al mundo de la música electrónica, especialmente en el subgénero del future house, ha sido significativa. Diablo es reconocido por su estilo distintivo y su capacidad para fusionar elementos de diversos géneros en sus producciones. A lo largo de su carrera, ha lanzado álbumes exitosos y ha dejado una marca indeleble en la escena de la música electrónica moderna como un innovador y líder.', 
+                                '../../DESARROLLO-WEB/media/don_diablo.jpg', 
+                                'Don Pepijn Schipper, conocido como Don Diablo, es un DJ, productor y músico neerlandés. Ha sido reconocido por su estilo innovador y ha colaborado con varios artistas destacados.'
+                            )">Ver más</button>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- ARTISTA 11: PRÓXIMAMENTE 1 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 coming-soon-card">
+                        <div class="card-body d-flex flex-column align-items-center">
+                            <h5 class="card-title text-center">PRÓXIMAMENTE</h5>
+                            <h5 class="card-title text-center">PRÓXIMAMENTE</h5>
+                            <h5 class="card-title text-center">PRÓXIMAMENTE</h5>
+                            <h5 class="card-title text-center">PRÓXIMAMENTE</h5>
+                            <h5 class="card-title text-center">PRÓXIMAMENTE</h5>
+                            <h5 class="card-title text-center">PRÓXIMAMENTE</h5>
+                            <h5 class="card-title text-center">PRÓXIMAMENTE</h5>
+                            <h5 class="card-title text-center">PRÓXIMAMENTE</h5>
+                            <h5 class="card-title text-center">PRÓXIMAMENTE</h5>
+                            <h5 class="card-title text-center">PRÓXIMAMENTE</h5>
+                            <h5 class="card-title text-center">PRÓXIMAMENTE</h5>
+                            <h5 class="card-title text-center">PRÓXIMAMENTE</h5>
+                            <h5 class="card-title text-center">PRÓXIMAMENTE</h5>
+                            <h5 class="card-title text-center">PRÓXIMAMENTE</h5>
+                            <h5 class="card-title text-center">PRÓXIMAMENTE</h5>
+                            <h5 class="card-title text-center">PRÓXIMAMENTE</h5>
+                            <h5 class="card-title text-center">PRÓXIMAMENTE</h5>
+                            <h5 class="card-title text-center">PRÓXIMAMENTE</h5>
+                            <h5 class="card-title text-center">PRÓXIMAMENTE</h5>
+                            <h5 class="card-title text-center">PRÓXIMAMENTE</h5>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- ARTISTA 12: PRÓXIMAMENTE 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 coming-soon-card">
+                        <div class="card-body d-flex flex-column align-items-center">
+                            <h5 class="card-title text-center">PRÓXIMAMENTE</h5>
+                            <h5 class="card-title text-center">PRÓXIMAMENTE</h5>
+                            <h5 class="card-title text-center">PRÓXIMAMENTE</h5>
+                            <h5 class="card-title text-center">PRÓXIMAMENTE</h5>
+                            <h5 class="card-title text-center">PRÓXIMAMENTE</h5>
+                            <h5 class="card-title text-center">PRÓXIMAMENTE</h5>
+                            <h5 class="card-title text-center">PRÓXIMAMENTE</h5>
+                            <h5 class="card-title text-center">PRÓXIMAMENTE</h5>
+                            <h5 class="card-title text-center">PRÓXIMAMENTE</h5>
+                            <h5 class="card-title text-center">PRÓXIMAMENTE</h5>
+                            <h5 class="card-title text-center">PRÓXIMAMENTE</h5>
+                            <h5 class="card-title text-center">PRÓXIMAMENTE</h5>
+                            <h5 class="card-title text-center">PRÓXIMAMENTE</h5>
+                            <h5 class="card-title text-center">PRÓXIMAMENTE</h5>
+                            <h5 class="card-title text-center">PRÓXIMAMENTE</h5>
+                            <h5 class="card-title text-center">PRÓXIMAMENTE</h5>
+                            <h5 class="card-title text-center">PRÓXIMAMENTE</h5>
+                            <h5 class="card-title text-center">PRÓXIMAMENTE</h5>
+                            <h5 class="card-title text-center">PRÓXIMAMENTE</h5>
+                            <h5 class="card-title text-center">PRÓXIMAMENTE</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- VIDEO -->
+            <div class="modal" id="myVideoModal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeMyVideoModal()">&times;</span>
+                    <iframe id="myVideoFrame" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="videoPic">
+                <img src="../../DESARROLLO-WEB/media/DINO.jpg" alt="Video Thumbnail" onclick="openMyVideoModal('https://www.youtube-nocookie.com/embed/r-_0ukeITdI?si=C-veKzuXKQEe6gOM')">
+            </div>
+        </div>
+
+        <!-- BANNER FIJA ABAJO -->
+        <div class="banner-fixed-bottom closed">
+            <button class="close-banner-btn" onclick="closeBanner()">X</button>
+            <h3 class="m-0 text-center">¿TODAVÍA NO LO HAS VISTO? ¡YA ESTA AQUI EL TRAILER DE TOMORROWLAND 2024!</h3>
+            <div class="video-container">
+                <div class="embed-responsive">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/7gEAqO7-6Bw?si=2SoKm6yonzfI2vq7" title="YouTube video player" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <!-- MODAL -->
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="imageModalLabel"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="modalScrollableContent" class="text-center">
+                        <h5 id="modalArtistName"></h5>
+                        <img id="modalImage" class="img-fluid rounded" alt="Artista">
+                        <p id="modalArtistInfo"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="footerContainer sticky-footer text-center py-3">
+        <ul class="nav justify-content-center border-bottom">
+            <li class="nav-item active">
+                <a href="../../DESARROLLO-WEB/index.html" class="nav-link custom-underline active" aria-current="page">
+                    <i class="fa-solid fa-house"></i> HOME
+                </a>
+            </li>
+            <li class="nav-item active">
+                <a href="../../DESARROLLO-WEB/public/artists.html" class="nav-link current custom-underline active" aria-current="page">
+                    <i class="ri-team-fill"></i> ARTISTS
+                </a>
+            </li>
+            <li class="nav-item active">
+                <a href="../../DESARROLLO-WEB/public/history.html" class="nav-link custom-underline active" aria-current="page">
+                    <i class="ri-hourglass-2-line"></i> HISTORY
+                </a>
+            </li>
+            <li class="nav-item active">
+                <a href="../../DESARROLLO-WEB/public/gallery.html" class="nav-link custom-underline active" aria-current="page">
+                    <i class="fa-solid fa-diagram-project"></i> GALLERY
+                </a>
+            </li>
+            <li class="nav-item active">
+                <a href="../../DESARROLLO-WEB/public/about.html" class="nav-link custom-underline active" aria-current="page">
+                    <i class="fa-solid fa-question"></i> ABOUT
+                </a>
+            </li>
+            <li class="nav-item active">
+                <a href="../../DESARROLLO-WEB/public/contact.html" class="nav-link custom-underline active" aria-current="page">
+                    <i class="fa-solid fa-phone"></i> CONTACT
+                </a>
+            </li>
+        </ul>
+        <div class="madeContainer">
+            <a href="https://github.com/VSXR" class="madeBy text-center">- MADE BY VSXR -</a>
+        </div>
+        <p class="copyright text-center" id="yearParagraph"></p>
+    </footer>
+    
+
+    <script src="../../DESARROLLO-WEB/JS/artists.js"></script>
+    <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="vsxr" data-description="Support me on Buy me a coffee!" data-message="" data-color="#BA0119" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://kit.fontawesome.com/ba4ab86251.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

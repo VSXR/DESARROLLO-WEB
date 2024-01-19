@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="es ltr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- Estilos y fuentes -->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet" />
+        <link rel="stylesheet" href="./CSS/style.css" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+        <title>PROYECTO FINAL DW -- VSR</title>
+    </head>
+
+    <body>
+        <!-- Encabezado -->
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container-fluid">
+                    <!-- Logo -->
+                    <a class="navbar-brand abs" href="../DESARROLLO-WEB/index.html">
+                        <div class="logo-container">
+                            <i class="navName ri-netease-cloud-music-fill"></i>
+                            <h1 class="navName">HAYASA</h1>
+                        </div>
+                    </a>
+
+                    <!-- Botón de navegación para pantallas pequeñas -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <!-- Menú de navegación -->
+                    <div class="navbar-collapse collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mb-2 mb-lg-0 me-auto">
+                            <!-- Enlaces principales -->
+                            <li class="nav-item active">
+                                <a href="../DESARROLLO-WEB/index.html" class="nav-link current custom-underline active" aria-current="page"><i
+                                        class="fa-solid fa-house"></i> HOME</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a href="../DESARROLLO-WEB/public/artists.html" class="nav-link custom-underline active" aria-current="page"><i
+                                        class="ri-team-fill"></i> ARTISTS</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a href="../DESARROLLO-WEB/public/history.html" class="nav-link custom-underline active" aria-current="page"><i
+                                        class="ri-hourglass-2-line"></i> HISTORY</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a href="../DESARROLLO-WEB/public/gallery.html" class="nav-link custom-underline active" aria-current="page"><i
+                                        class="fa-solid fa-diagram-project"></i> GALLERY</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a href="../DESARROLLO-WEB/public/about.html" class="nav-link custom-underline active" aria-current="page"><i
+                                        class="fa-solid fa-question"></i> ABOUT</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a href="../DESARROLLO-WEB/public/contact.html" class="nav-link custom-underline active" aria-current="page"><i
+                                        class="fa-solid fa-phone"></i> CONTACT</a>
+                            </li>
+                        </ul>
+
+                        <!-- Enlaces sociales -->
+                        <ul class="navbar-nav ms-auto">
+                            <div class="nav-item social">
+                                <a class="nav-item" href="../DESARROLLO-WEB/public/contact.html"><i class="fa-solid fa-envelope"></i></a>
+                                <a class="nav-item" href="https://github.com/VSXR"><i class="fa-brands fa-github"></i></a>
+                                <a class="nav-item" href="https://dev.to/vsx"><i class="fa-brands fa-dev"></i></a>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Contenido principal -->
+        <main>
+            <!-- Carrusel principal -->
+            <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <!-- Slide 1 -->
+                    <div class="carousel-item active c-item">
+                        <a href="https://www.tomorrowland.com/en/festival/tickets/tomorrowland-tickets">
+                            <img src="../DESARROLLO-WEB/media/chico.jpg"
+                                class="d-block w-100 c-img" alt="Slide 1">
+                            <div class="carousel-caption text-center">
+                                <h2 class="display-4">EVENTOS 2024</h2>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="carousel-item active c-item">
+                        <a href="../DESARROLLO-WEB/public/gallery.html">
+                            <img src="../DESARROLLO-WEB/media/best.jpg"
+                                class="d-block w-100 c-img" alt="Slide 2">
+                            <div class="carousel-caption text-center">
+                                <h2 class="display-4">GALERIA DE FOTOS</h2>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="carousel-item active c-item">
+                        <a href="../DESARROLLO-WEB/public/artists.html">
+                            <img src="../DESARROLLO-WEB/media/premios.jpg"
+                                class="d-block w-100 c-img" alt="Slide 3">
+                            <div class="carousel-caption text-center">
+                                <h2 class="display-4">ARTISTAS PREMIADOS POR HAYASA</h2>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Controles del Carrusel -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Contenedor principal -->
+            <div class="container-fluid">
+                <div class= "row align-items-start">
+                    <div class="col-md-8 mb-4">
+                        <!-- Recuadro de Texto con Noticias -->
+                        <div class="card">
+                            <div class="card-body">
+                                <h2 class="mb-4 text-center">NOTICIAS</h2>
+                                <hr>
+                                <!-- Noticia 1 -->
+                                <div class="news-item mt-4">
+                                    <div class="row align-items-center">
+                                        <div class="col-md-4">
+                                            <img src="../DESARROLLO-WEB/media/evento.jpg" alt="Imagen Noticia 1" class="img-fluid">
+                                        </div>
+                                        <div class="col-md-8 text-align text-center">
+                                            <h3>¡YA ESTAN AQUI LOS EVENTOS MUSICALES DE ESTE AÑO 2024!</h3>
+                                            <p>¡Descubre los detalles del evento musical en vivo que estará lleno de emoción y vibraciones positivas!</p>
+                                            <a href="https://www.tomorrowland.com/en/festival/ticket-sales" class="btn btn-outline-dark">Leer Más</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Noticia 2 -->
+                                <div class="news-item mt-4">
+                                    <div class="row align-items-center">
+                                        <div class="col-md-4">
+                                            <img src="../DESARROLLO-WEB/media/premios.jpg" alt="Imagen Noticia 2" class="img-fluid">
+                                        </div>
+                                        <div class="col-md-8 text-align text-center">
+                                            <h3>ARTISTAS PREMIADOS POR HAYASA EDICION 2023</h3>
+                                            <p>¡Descubre la extraordinaria creatividad de los artistas galardonados durante la emocionante edición 2023 de Hayasa!</p>
+                                            <a href="../DESARROLLO-WEB/public/artists.html" class="btn btn-outline-dark">Leer Más</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Noticia 3 -->
+                                <div class="news-item mt-4">
+                                    <div class="row align-items-center">
+                                        <div class="col-md-4">
+                                            <img src="../DESARROLLO-WEB/media/question.jpg" alt="Imagen Noticia 3" class="img-fluid">
+                                        </div>
+                                        <div class="col-md-8 text-align text-center">
+                                            <h3>HISTORIA DE HAYASA</h3>
+                                            <p>Sumérgete en la rica historia de Hayasa, explorando sus orígenes, evolución y momentos destacados a lo largo de los años. Desde los humildes comienzos hasta convertirse en un epicentro cultural, esta historia te cautivará. ¡Acompáñanos en este fascinante viaje a través del tiempo y descubre los eventos que han dado forma a Hayasa!</p>
+                                            <a href="../DESARROLLO-WEB/public/about.html" class="btn btn-outline-dark">Leer Más</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Recuadro de Videos -->
+                        <div class="container-fluid card videos d-flex">
+                            <div class="card-body">
+                                <h2 class="mb-4 text-center">VIDEOS</h2>
+                                <hr>
+                                <!-- Video 1 -->
+                                <div class="news-item mt-4">
+                                    <h3 class="m-0 text-center">¿TODAVÍA NO LO HAS VISTO? ¡YA ESTA AQUI EL TRAILER DE TOMORROWLAND 2024!</h3>
+                                    <div class="video-container">
+                                        <div class="embed-responsive">
+                                            <iframe width="560" height="315" src="https://www.youtube.com/embed/7gEAqO7-6Bw?si=2SoKm6yonzfI2vq7" title="YouTube video player" allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Video 2 -->
+                                <div class="news-item mt-4">
+                                    <h3 class="m-0 text-center">TOMORROWLAND - ONE WORLD RADIO</h3>
+                                    <div class="video-container">
+                                        <div class="embed-responsive">
+                                            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/wBgSH-CGPzg?si=g4OsAt8OFqBqUYDs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Video 3 -->
+                                <div class="news-item mt-4">
+                                    <h3 class="m-0 text-center">TOMORROWLAND - ONE WORLD RADIO DAY BREAK SESSIONS</h3>
+                                    <div class="video-container">
+                                        <div class="embed-responsive">
+                                            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/aZT73SdhXok?si=Cj4SwmG7PMXTe3TA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Posts de Instagram -->
+                        <div class="card container-fluid">
+                            <div class="card-body">
+                                <div class="containerInsta row mb-4">
+                                    <h2 class="titleh2 text-center mb-6 mt-4">POSTS INSTAGRAM</h2>
+                                    <hr>
+                                    <div class="col-md-6">
+                                        <!-- Post a la izquierda -->
+                                        <div class="post-container">
+                                            <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/C0zcdrmu4Ad/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14">
+                                                <!-- Contenido del Bloque 1 -->
+                                            </blockquote>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <!-- Post a la derecha -->
+                                        <div class="post-container">
+                                            <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/C1t69HVo5fu/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14">
+                                                <!-- Contenido del Bloque 2 -->
+                                            </blockquote>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Columna con Widget de Spotify, RRS y Sección de Comentarios con Instagram -->
+                    <div class="col-md-4">
+                        <!-- ASIDE CON CANCIONES MAS ESCUCHADAS ELECTRONICA-->
+                        <aside class="mt-4 asideList">
+                            <div class="card cardList">
+                                <div class="card-body cardListBody">
+                                    <h2 class="text-center">FAMOUS ELECTRONIC MUSIC SONGS</h2>
+                                    <hr>
+                                    <!-- Widget de Spotify -->
+                                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/04W3dGNf9YWyA981ccJD79?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                                </div>
+                            </div>
+                        </aside>
+
+                        <!-- Aside con Iconos de Redes Sociales -->   
+                        <aside class="social-icons mt-4 mb-4">
+                            <div class="row justify-content-center">
+                                <div class="col-sm-12 col-md-6 col-lg-3 mb-2 text-center">
+                                    <a href="https://www.instagram.com/tomorrowland/" class="text-dark d-block p-3"><i class="fab fa-instagram fa-2x"></i></a>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-3 mb-2 text-center">
+                                    <a href="https://twitter.com/tomorrowland" class="text-dark d-block p-3"><i class="fab fa-twitter fa-2x"></i></a>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-3 mb-2 text-center">
+                                    <a href="https://www.youtube.com/user/TomorrowlandChannel" class="text-dark d-block p-3"><i class="fab fa-youtube fa-2x"></i></a>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-3 mb-2 text-center">
+                                    <a href="https://www.tiktok.com/@tomorrowland" class="text-dark d-block p-3"><i class="fab fa-tiktok fa-2x"></i></a>
+                                </div>
+                            </div>
+                        </aside>
+
+                        <!-- Aside con ultimos lanzamientos -->
+                        <aside class="social-icons mt-4 mb-4">
+                            <div class="row justify-content-center">
+                                <h2 class="text-center">CANCIONES MÍTICAS DE MUSICA ELECTRONICA</h2>
+                                <hr>
+                                <ol class="list-unstyled">
+                                    <li class="col-sm-12 col-md-6 col-lg-12 mb-2 text-center">
+                                        <a href="https://www.youtube.com/watch?v=ZWmrfgj0MZI" class="text-dark d-block p-3">Daft Punk - Around the World</a>
+                                    </li>
+                        
+                                    <li class="col-sm-12 col-md-6 col-lg-12 mb-2 text-center">
+                                        <a href="https://www.youtube.com/watch?v=IcrbM1l_BoI" class="text-dark d-block p-3">Avicii - Wake Me Up</a>
+                                    </li>
+                        
+                                    <li class="col-sm-12 col-md-6 col-lg-12 mb-2 text-center">
+                                        <a href="https://www.youtube.com/watch?v=ebXbLfLACGM" class="text-dark d-block p-3">Calvin Harris - Summer</a>
+                                    </li>
+                        
+                                    <li class="col-sm-12 col-md-6 col-lg-12 mb-2 text-center">
+                                        <a href="https://www.youtube.com/watch?v=YJVmu6yttiw" class="text-dark d-block p-3">Skrillex - Bangarang</a>
+                                    </li>
+                        
+                                    <li class="col-sm-12 col-md-6 col-lg-12 mb-2 text-center">
+                                        <a href="https://www.youtube.com/watch?v=fB63ztKnGvo" class="text-dark d-block p-3">David Guetta ft. Sia - Titanium</a>
+                                    </li>
+                        
+                                    <li class="col-sm-12 col-md-6 col-lg-12 mb-2 text-center">
+                                        <a href="https://www.youtube.com/watch?v=PT2_F-1esPk" class="text-dark d-block p-3">The Chainsmokers ft. Halsey - Closer</a>
+                                    </li>
+                        
+                                    <li class="col-sm-12 col-md-6 col-lg-12 mb-2 text-center">
+                                        <a href="https://www.youtube.com/watch?v=IxxstCcJlsc" class="text-dark d-block p-3">Zedd ft. Foxes - Clarity</a>
+                                    </li>
+                        
+                                    <li class="col-sm-12 col-md-6 col-lg-12 mb-2 text-center">
+                                        <a href="https://www.youtube.com/watch?v=gCYcHz2k5x0" class="text-dark d-block p-3">Martin Garrix - Animals</a>
+                                    </li>
+                        
+                                    <li class="col-sm-12 col-md-6 col-lg-12 mb-2 text-center">
+                                        <a href="https://www.youtube.com/watch?v=t99KH0TR-J4" class="text-dark d-block p-3">Deadmau5 - Strobe</a>
+                                    </li>
+                        
+                                    <li class="col-sm-12 col-md-6 col-lg-12 mb-2 text-center">
+                                        <a href="https://www.youtube.com/watch?v=6cD-UQsJNB4" class="text-dark d-block p-3">Tiësto - Adagio for Strings</a>
+                                    </li>
+                        
+                                    <li class="col-sm-12 col-md-6 col-lg-12 mb-2 text-center">
+                                        <a href="https://www.youtube.com/watch?v=1y6smkh6c-0" class="text-dark d-block p-3">Swedish House Mafia - Don't You Worry Child</a>
+                                    </li>
+                        
+                                    <li class="col-sm-12 col-md-6 col-lg-12 mb-2 text-center">
+                                        <a href="https://www.youtube.com/watch?v=93ASUImTedo" class="text-dark d-block p-3">Disclosure ft. Sam Smith - Latch</a>
+                                    </li>
+                        
+                                    <li class="col-sm-12 col-md-6 col-lg-12 mb-2 text-center">
+                                        <a href="https://www.youtube.com/watch?v=HMUDVMiITOU" class="text-dark d-block p-3">DJ Snake ft. Lil Jon - Turn Down for What</a>
+                                    </li>
+                                    
+                                    <li class="col-sm-12 col-md-6 col-lg-12 mb-2 text-center">
+                                        <a href="https://www.youtube.com/watch?v=YqeW9_5kURI" class="text-dark d-block p-3">Major Lazer & DJ Snake ft. MØ - Lean On</a>
+                                    </li>
+                                    
+                                    <li class="col-sm-12 col-md-6 col-lg-12 mb-2 text-center">
+                                        <a href="https://www.youtube.com/watch?v=5LILChvqUo4" class="text-dark d-block p-3">Porter Robinson - Language</a>
+                                    </li>
+                                    
+                                    <li class="col-sm-12 col-md-6 col-lg-12 mb-2 text-center">
+                                        <a href="https://www.youtube.com/watch?v=bRVvEHk7xOs" class="text-dark d-block p-3">Kaskade - Eyes</a>
+                                    </li>
+                                    
+                                    <li class="col-sm-12 col-md-6 col-lg-12 mb-2 text-center">
+                                        <a href="https://www.youtube.com/watch?v=Ly7uj0JwgKg" class="text-dark d-block p-3">Flume ft. Kai - Never Be Like You</a>
+                                    </li>                                    
+                        
+                                    <li class="col-sm-12 col-md-6 col-lg-12 mb-2 text-center">
+                                        <a href="https://www.youtube.com/watch?v=5XR7naZ_zZA" class="text-dark d-block p-3">Galantis - Runaway (U & I)</a>
+                                    </li>
+                        
+                                    <li class="col-sm-12 col-md-6 col-lg-12 mb-2 text-center">
+                                        <a href="https://www.youtube.com/watch?v=3b0Pp_G9w1E" class="text-dark d-block p-3">Knife Party - Centipede</a>
+                                    </li>
+                        
+                                    <li class="col-sm-12 col-md-6 col-lg-12 mb-2 text-center">
+                                        <a href="https://www.youtube.com/watch?v=m7Bc3pLyij0" class="text-dark d-block p-3">Marshmello ft. Bastille - Happier</a>
+                                    </li>
+                                </ol>
+                            </div>
+                        </aside>
+
+                        <!-- Aside con Widget de Spotify -->
+                        <aside class="mt-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h2 class="text-center">ELECTRONIC MUSIC MIX</h2>
+                                    <hr>
+                                    <!-- Widget de Spotify -->
+                                    <iframe style="border-radius: 12px"
+                                        src="https://open.spotify.com/embed/playlist/37i9dQZF1EIeZKM1YFAtwx?utm_source=generator"
+                                        width="100%" height="352" frameborder="0" allowfullscreen=""
+                                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                                        loading="lazy"></iframe>
+                                </div>
+                            </div>
+                        </aside>
+
+                        <!-- ASIDE GITHUB REPO PRACTICA FINAL DW -->
+                        <aside class="mt-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h2 class="text-center">REPOSITORIO GITHUB</h2>
+                                    <hr>
+                                    <a href=""></a>
+                                </div>
+                            </div>
+                        </aside>
+
+    
+                    </div>
+                </div>
+            </div>
+
+            <!-- COOKIES -->
+            <div id="cookie-notice" class="cookie-notice">
+                <p>Este sitio web utiliza cookies. Al continuar navegando, aceptas nuestro uso de cookies.
+                    <button id="accept-cookies">Aceptar</button>
+                    <button id="reject-cookies">Rechazar</button>
+                </p>
+            </div>
+        </main>
+
+        <!-- Pie de página -->
+        <footer class="footerContainer sticky-footer">
+            <ul class="nav justify-content-center border-bottom">
+                <!-- Enlaces del pie de página -->
+                <li class="nav-item active">
+                    <a href="../DESARROLLO-WEB/index.html" class="nav-link current custom-underline active" aria-current="page">
+                        <i class="fa-solid fa-house"></i> HOME
+                    </a>
+                </li>
+                <li class="nav-item active">
+                    <a href="../DESARROLLO-WEB/public/artists.html" class="nav-link custom-underline active" aria-current="page">
+                        <i class="ri-team-fill"></i> ARTISTS
+                    </a>
+                </li>
+                <li class="nav-item active">
+                    <a href="../DESARROLLO-WEB/public/history.html" class="nav-link custom-underline active" aria-current="page">
+                        <i class="ri-hourglass-2-line"></i> HISTORY
+                    </a>
+                </li>
+                <li class="nav-item active">
+                    <a href="../DESARROLLO-WEB/public/gallery.html" class="nav-link custom-underline active" aria-current="page">
+                        <i class="fa-solid fa-diagram-project"></i> GALLERY
+                    </a>
+                </li>
+                <li class="nav-item active">
+                    <a href="../DESARROLLO-WEB/public/about.html" class="nav-link custom-underline active" aria-current="page">
+                        <i class="fa-solid fa-question"></i> ABOUT
+                    </a>
+                </li>
+                <li class="nav-item active">
+                    <a href="../DESARROLLO-WEB/public/contact.html" class="nav-link custom-underline active" aria-current="page">
+                        <i class="fa-solid fa-phone"></i> CONTACT
+                    </a>
+                </li>
+            </ul>
+            <div class="madeContainer">
+                <a href="https://github.com/VSXR" class="madeBy text-center">- MADE BY VSXR -</a>
+            </div>
+            <p class="copyright text-center" id="yearParagraph"></p>
+        </footer>
+
+        <script src="../DESARROLLO-WEB/JS/main.js"></script>
+        <script async src="https://www.instagram.com/embed.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="vsxr" data-description="Support me on Buy me a coffee!" data-message="Support me on Buy me a coffee!" data-color="#BA0119" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/jquery.nanogallery2.min.js"></script>
+        <script src="https://kit.fontawesome.com/ba4ab86251.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    </body>
+</html>

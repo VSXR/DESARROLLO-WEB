@@ -1,0 +1,549 @@
+/*--------------*/
+/* GOOGLE FONTS */
+/*--------------*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+/*---------------------------*/
+/* SELECTOR UNIVERSAL Y HTML */
+/*---------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+html {
+    overflow-x: hidden;
+}
+
+/*--------*/
+/* NAVBAR */
+/*--------*/
+.navbar {
+    background-color: rgb(186, 1, 25);
+}
+
+.navName {
+    /* LOGO */
+    font-size: 45px;
+    font-weight: bold;
+    padding-left: 10px;
+    opacity: 1;
+}
+
+.navName:hover, .logo-container:hover .ri-netease-cloud-music-fill {
+    opacity: 0.9;
+    color: rgb(0, 0, 0);
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand i {
+    margin-right: 10px;
+}
+
+.navbar-brand .navName {
+    margin: 0;
+    font-size: 1.5em; 
+}
+
+/* OPCIONES MENU (HOME, ...) */
+.nav-link {
+    font-size: 25px;
+    font-weight: bold;
+    padding: 5px;
+    opacity: 1;
+}
+
+.current {
+    /* SABER LA PAGINA ACTUAL */
+    color: rgb(0, 0, 0) !important;
+    transition: color 0.3s;
+}
+
+/* ICONOS RRS (GITHUB, DEV...) */
+.nav-item {
+    padding: 5px;
+    transition: color 0.3s, text-decoration 0.3s;
+    position: relative; /* IMPORTANTE POSICIONAR PSEUDO-ELEMENTO! */
+}
+
+.nav-item.social {
+    font-size: 20px;
+    opacity: 1;
+    color: #ffffff;
+    font-weight: bold;
+    transition: opacity 0.5s ease, text-decoration 0.3s;
+}
+
+.nav-item.social a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.nav-item.social a:hover {
+    color: #000000;
+    opacity: 0.6;
+}
+
+/* SUBRAYADO ANIMADO */
+.navbar-nav .nav-item::before {
+    content: "";
+    position: absolute;
+    bottom: 7.3px; /* OJO 7.3PX PEGA EL SUBRAYADO AL TEXTO COMO QUIERO CUIDAD NO CAMBIARLO!!!! */
+    height: 1px; /* GROSOR */
+    width: 100%; /* ANCHO SUBRAYADO */
+    transition: width 0.3s;
+    background-color: rgb(0, 0, 0);
+    left: 0; /* DESDE INICIO DE TEXTO */
+    transform: scaleX(0); /* OCULTAR SUBRAYADO INICIAL */
+    transform-origin: bottom left; /* FIJAR ORIGEN TRANSICION */
+}
+
+.navbar-nav .nav-item:hover::before {
+    transform: scaleX(1); /* MOSTRAR ANIMACION */
+}
+
+/*------*/
+/* BODY */
+/*------*/
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 3000px;
+    overflow-x: hidden;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 36px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* BANNER CON VIDEO DE FONDO */
+.banner-video {
+    position: relative;
+    overflow: hidden;
+    height: 50vh;
+    margin-top: -10px; /* ASI CONSEGUIMOS QUE SE PEGUE AL HEADER */
+}
+
+.banner-video video {
+    width: 100%;
+    height: 90%; /* ANCHURA VIDEO BANNER */
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.banner-video h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 36px;
+    text-transform: uppercase;
+}
+
+/* BANNER FIXED ABAJO */
+.banner-fixed-bottom {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff; 
+    box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.1); /* SOMBREADO */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    animation: slideDown 0.5s ease-out; /* Agrega la animación al banner */
+}
+@keyframes slideDown { /* ANIMACION AL CERRAR DEPLAZAMIENTO HACIA ABAJO */
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(100%);
+    }
+}
+
+.close-banner-btn { /*ESTILO DEL BOTON CERRAR*/
+    font-size: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #000;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.banner-content {
+    padding: 10px; 
+}
+.mt-4 {
+    margin-top: 20px;
+}
+.embed-responsive {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+.embed-responsive iframe {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.video-container {
+    margin: 20px;
+    width: calc(100% - 40px);
+}
+.video-container iframe {
+    width: 100%;
+    height: 100%;
+}
+
+/* Botón circular */
+#scrollButton {
+    position: absolute;
+    bottom: 10vh;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#scrollButton:hover {
+    background-color: #f9f9f94c;
+    color: #fff;
+}
+
+/*------*/
+/* MAIN */
+/*------*/
+main {
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+/*CARDS*/
+.card img{
+    width: 100%;
+    height: 200px;
+    margin: 20px;
+    object-fit: cover;
+}
+
+.modal {
+    display: none;
+    position: relative;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+    position: relative;
+    margin: 10% auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 700px;
+    background-color: #fefefe;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #aaa;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* FLECHAS GALERIA */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    user-select: none;
+    transition: 0.6s ease;
+}
+
+.next {
+    right: 0;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* GALLERY MODAL */
+.galleryPic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.galleryPic img {
+    cursor: pointer;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/*--------*/
+/* FOOTER */
+/*--------*/
+footer {
+    background-color: rgb(186, 1, 25);
+    padding: 10px;
+}
+
+.sticky-footer {
+    position: sticky;
+    top: 100%;
+}
+
+.menu-item-footer {
+    /* CLASE DE HOME, PROJECTS... EN FOOTER */
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 5px;
+    opacity: 1;
+    margin-top: 5px;
+    margin-bottom: auto;
+    text-decoration: none; /* QUITAR ENCLACES DEL FOOTER */
+}
+.footerContainer a {
+    color: #ffffff;
+}
+
+.menu-item-footer:hover {
+    color: #000000;
+}
+
+.border-bottom {
+    padding-bottom: 10px; /* CENTRADO DE HOME... CON LA LINEA BLANCA DEL FOOTER */
+}
+
+.madeContainer {
+    /* CONTENEDOR PARA CENTRAR ENLACE MADE BY */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.madeBy {
+    font-size: 15px;
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
+    opacity: 1;
+    color: #ffffff;
+    padding-top: 25px;
+    font-weight: bold;
+}
+
+.copyright {
+    font-size: 15px;
+    opacity: 1;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/*--------------.*/
+/* MEDIA QUERIES */
+/*---------------*/
+/*--------------.*/
+/* MEDIA QUERIES */
+/*---------------*/
+
+/* iPhone 8 / Redmi 9 */
+@media only screen and (max-width: 393px) and (max-height: 851px) {
+    h1 {
+        font-size: 16px;
+    }
+    p {
+        font-size: 14px;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+}
+
+/* iPad Mini (Vertical) */
+@media only screen and (min-width: 394px) and (max-width: 768px) and (min-height: 851px) and (max-height: 1024px) {
+    h1 {
+        font-size: 20px;
+    }
+    p {
+        font-size: 16px;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .navName {
+        font-size: 40px;
+    }
+    .nav-link {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .nav-item {
+        padding: 5px; /* PARA QUE NO SE ME SUBAN LOS ICONOS ARRIBA */
+        text-align: center;
+    }
+    .social-icons {
+        display: flex;
+        flex-direction: column;
+    }
+    .navbar-nav .nav-item::before {
+        display: none;
+    }
+}
+
+/* iPad Pro 12.9” (Vertical) */
+@media only screen and (min-width: 769px) and (max-width: 1024px) and (min-height: 1025px) and (max-height: 1366px) {
+    h1 {
+        font-size: 24px;
+    }
+    p {
+        font-size: 18px;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .navName {
+        font-size: 40px;
+    }
+    .nav-link {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .nav-item {
+        padding: 5px; /* PARA QUE NO SE ME SUBAN LOS ICONOS ARRIBA */
+        text-align: center;
+    }
+    .social-icons {
+        display: flex;
+        flex-direction: column;
+    }
+    .navbar-nav .nav-item::before {
+        display: none;
+    }
+    
+}
+
+/* Pantalla de portátil más común */
+@media only screen and (min-width: 1025px) and (max-width: 1440px) and (min-height: 900px) and (max-height: 900px) {
+    h1 {
+        font-size: 30px;
+    }
+    p {
+        font-size: 20px;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .navName {
+        font-size: 40px;
+    }
+    .nav-link {
+        font-size: 28px;
+        padding: 10px 20px;
+    }
+    .nav-item {
+        text-align: center;
+    }
+}
+
+/* Pantalla Full HD */
+@media only screen and (min-width: 1441px) and (max-width: 1920px) and (min-height: 1080px) and (max-height: 1080px) {
+    h1 {
+        font-size: 36px;
+    }
+    p {
+        font-size: 24px;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+        
+    .navName {
+        font-size: 40px;
+    }
+    .nav-link {
+        font-size: 28px;
+        padding: 10px 20px;
+    }
+    .nav-item {
+        text-align: center;
+    }
+    .nav-item.social::before {
+        display: none;
+    }
+}
