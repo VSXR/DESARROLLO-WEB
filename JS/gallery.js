@@ -58,7 +58,7 @@ function openImageModal(imageURL) {
     let modal = document.getElementById("imageModal");
     let modalImage = document.getElementById("modalImage");
 
-    // Encuentra el índice de la imagen actual en el array
+    // ENCUENTRA EL IDICE ACTUAL EN EL ARRAY
     currentImageIndex = imageArray.indexOf(imageURL);
 
     modalImage.src = imageURL;
@@ -85,7 +85,7 @@ function changeImage(n) {
     modalImage.src = imageArray[currentImageIndex];
 }
 
-// Cerrar el modal haciendo clic fuera del contenido del modal
+// CERRAR MODAL
 window.onclick = function (event) {
     let modal = document.getElementById("imageModal");
     if (event.target == modal) {
@@ -93,7 +93,7 @@ window.onclick = function (event) {
     }
 };
 
-// Agregar la función para las flechas
+// FLECHITAS
 document.onkeydown = function (event) {
     let modal = document.getElementById("imageModal");
     if (modal.style.display === "block") {
@@ -110,10 +110,8 @@ document.onkeydown = function (event) {
     }
 };
 
-// Llama a esta función para inicializar la galería
+// LLAMAMOS A LA FUNCION PARA INICIALIZAR LA GALERIA
 initializeGallery();
-
-
 
 
 //FIXED BOTTOM BANNER
