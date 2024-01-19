@@ -23,6 +23,7 @@ article {
     margin-right: 20px;
 }
 aside {
+    text-align: center;
     height: 100%;
     flex: 1;
     background-color: #f8f9fa;
@@ -333,6 +334,26 @@ body {
 /* Estilo específico para el botón de rechazar */
 #cookie-notice #reject-cookies {
     background-color: #f44336;
+}
+
+/* ESTILO PARA CONTENEDOR (TEXTO Y ENLACE DEL REPOSITORIO DE LA PRACTICA FINAL DE DESARROLLO WEB) */
+.textoRepo{
+    font-size: medium;
+}
+
+.enlaceRepo {
+    display: inline-block;
+    padding: 25px 20px;
+    font-size: 18px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #007BFF;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.enlaceRepo:hover {
+    background-color: #0056b3;
 }
 
 /*--------*/
